@@ -1,0 +1,41 @@
+[12:42:18.421] Save at: ../results/AD/showlog
+[12:42:18.422] 0 iterations for lab per epoch.
+[12:42:18.422] 0 iterations for unlab per epoch.
+[12:42:18.422] 0 samples for test.
+
+[12:43:02.817] Save at: ../results/AD/showlog
+[12:43:02.818] Loading data from: /home/amishr17/aryan/new_attempt/datalist/AD/AD_0
+[12:43:02.818] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/train_lab.txt: ['TBAD-40.h5\n']
+[12:43:02.818] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/train_unlab.txt: ['TBAD-58.h5\n', 'TBAD-79.h5\n', '\n']
+[12:43:02.818] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/test.txt: ['TBAD-22.h5\n', 'TBAD-129.h5']
+[12:43:02.818] lab set: total 0 samples
+[12:43:02.818] unlab set: total 0 samples
+[12:43:02.818] test set: total 0 samples
+[12:43:02.818] 0 iterations for lab per epoch.
+[12:43:02.818] 0 iterations for unlab per epoch.
+[12:43:02.818] 0 samples for test.
+
+[12:44:38.042] Save at: ../results/AD/showlog
+[12:44:38.042] Loading data from: /home/amishr17/aryan/new_attempt/datalist/AD/AD_0
+[12:44:38.042] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/train_lab.txt: ['TBAD-40.h5\n']
+[12:44:38.042] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/train_unlab.txt: ['TBAD-58.h5\n', 'TBAD-79.h5\n', '\n']
+[12:44:38.043] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/test.txt: ['TBAD-22.h5\n', 'TBAD-129.h5']
+[12:44:38.043] lab set: total 1 samples
+[12:44:38.043] unlab set: total 2 samples
+[12:44:38.043] test set: total 2 samples
+[12:44:38.043] 1 iterations for lab per epoch.
+[12:44:38.043] 1 iterations for unlab per epoch.
+[12:44:38.043] 2 samples for test.
+
+[15:47:10.940] Save at: ../results/AD/showlog
+[15:47:10.941] Loading data from: /home/amishr17/aryan/new_attempt/datalist/AD/AD_0
+[15:47:10.941] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/train_lab.txt: ['TBAD-40.h5\n']
+[15:47:10.941] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/train_unlab.txt: ['TBAD-58.h5\n', 'TBAD-79.h5\n', '\n']
+[15:47:10.941] Content of /home/amishr17/aryan/new_attempt/datalist/AD/AD_0/test.txt: ['TBAD-22.h5\n', 'TBAD-129.h5']
+[15:47:10.941] lab set: total 1 samples
+[15:47:10.941] unlab set: total 2 samples
+[15:47:10.941] test set: total 2 samples
+[15:47:10.941] 1 iterations for lab per epoch.
+[15:47:10.941] 1 iterations for unlab per epoch.
+[15:47:10.941] 2 samples for test.
+
