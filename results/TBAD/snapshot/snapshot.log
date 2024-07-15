@@ -1,0 +1,741 @@
+2024-07-15 15:46:09,217 train.py <module> [line:449] INFO Namespace(num_classes=3, exp='TBAD', alpha=0.99, resume=False, load_path='/results/TBAD', data_dir='preprocess/TBAD/ImageTBAD', list_dir='datalist/AD/AD_0', save_path='/home/amishr17/aryan/new_attempt/results', aug_times=1, lab_batch_size=1, unlab_batch_size=2, lr=0.001, num_epochs=20, consistency_rampup=300.0, steps_per_epoch=1, save_step=1, beta1=0.5, beta2=0.999, scaler=1, gpu='0', seed=1337)
+2024-07-15 15:46:09,980 train.py create_dataloader [line:477] INFO 1 iterations for lab per epoch.
+2024-07-15 15:46:09,980 train.py create_dataloader [line:478] INFO 1 iterations for unlab per epoch.
+2024-07-15 15:46:09,980 train.py create_dataloader [line:479] INFO 2 samples for test.
+
+2024-07-15 15:46:09,981 train.py main [line:506] INFO 
+
+2024-07-15 15:46:10,483 train.py main [line:576] INFO epoch : 1, step : 0, loss_all: 1.8804,loss_ce: 0.9910, loss_dice: 0.8609, loss_focal: 0.2527, loss_iou: 1.1616, loss_supervised: 0.8165, loss_pc_lab: 1.0488, loss_pc_unlab: 2.2301, train_dice: 0.0286
+2024-07-15 15:46:10,980 test.py test_AD [line:151] INFO Dice Mean: 1.1684032559209574, Jaccard Mean: 0.5879365692501194, Hd95 Mean: 28.96940242297838, Assd Mean: 15.86548719473197
+2024-07-15 15:46:10,980 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:10,980 test.py test_AD [line:154] INFO FL :1.4(0.3)
+2024-07-15 15:46:10,980 test.py test_AD [line:155] INFO TL :1.0(0.3)
+2024-07-15 15:46:10,980 test.py test_AD [line:156] INFO Mean :1.2
+2024-07-15 15:46:10,980 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:10,980 test.py test_AD [line:159] INFO FL :0.7(0.1)
+2024-07-15 15:46:10,980 test.py test_AD [line:160] INFO TL :0.5(0.1)
+2024-07-15 15:46:10,980 test.py test_AD [line:161] INFO Mask :0.6
+2024-07-15 15:46:10,980 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:10,980 test.py test_AD [line:164] INFO FL :29.5(1.2)
+2024-07-15 15:46:10,980 test.py test_AD [line:165] INFO TL :28.4(1.8)
+2024-07-15 15:46:10,980 test.py test_AD [line:166] INFO Mask :29.0
+2024-07-15 15:46:10,980 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:10,980 test.py test_AD [line:169] INFO FL :16.1(0.6)
+2024-07-15 15:46:10,980 test.py test_AD [line:170] INFO TL :15.6(1.1)
+2024-07-15 15:46:10,980 test.py test_AD [line:171] INFO Mask :15.9
+2024-07-15 15:46:10,980 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:10,980 test.py test_AD [line:181] INFO Evaluation : val_dice: 1.1684, val_maxdice: 1.1684
+
+2024-07-15 15:46:11,429 train.py main [line:506] INFO 
+
+2024-07-15 15:46:11,549 train.py main [line:576] INFO epoch : 2, step : 0, loss_all: 1.6839,loss_ce: 0.9643, loss_dice: 0.8537, loss_focal: 0.2378, loss_iou: 1.1190, loss_supervised: 0.7937, loss_pc_lab: 0.8769, loss_pc_unlab: 1.9117, train_dice: 0.0372
+2024-07-15 15:46:11,684 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:11,684 test.py test_AD [line:130] INFO Class: 1: dice 1.2% | jaccard 0.6% | hd95 30.6 | asd 16.3
+2024-07-15 15:46:11,797 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:11,797 test.py test_AD [line:130] INFO Class: 2: dice 1.8% | jaccard 0.9% | hd95 25.3 | asd 13.2
+2024-07-15 15:46:11,926 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:11,927 test.py test_AD [line:130] INFO Class: 1: dice 1.9% | jaccard 0.9% | hd95 27.1 | asd 14.5
+2024-07-15 15:46:12,040 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:12,040 test.py test_AD [line:130] INFO Class: 2: dice 1.0% | jaccard 0.5% | hd95 28.6 | asd 15.5
+2024-07-15 15:46:12,041 test.py test_AD [line:151] INFO Dice Mean: 1.4549650134864653, Jaccard Mean: 0.7331635763954624, Hd95 Mean: 27.90893918198635, Assd Mean: 14.864523739169666
+2024-07-15 15:46:12,041 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:12,041 test.py test_AD [line:154] INFO FL :1.5(0.4)
+2024-07-15 15:46:12,041 test.py test_AD [line:155] INFO TL :1.4(0.4)
+2024-07-15 15:46:12,041 test.py test_AD [line:156] INFO Mean :1.5
+2024-07-15 15:46:12,041 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:12,041 test.py test_AD [line:159] INFO FL :0.8(0.2)
+2024-07-15 15:46:12,041 test.py test_AD [line:160] INFO TL :0.7(0.2)
+2024-07-15 15:46:12,041 test.py test_AD [line:161] INFO Mask :0.7
+2024-07-15 15:46:12,041 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:12,041 test.py test_AD [line:164] INFO FL :28.9(1.8)
+2024-07-15 15:46:12,041 test.py test_AD [line:165] INFO TL :27.0(1.6)
+2024-07-15 15:46:12,041 test.py test_AD [line:166] INFO Mask :27.9
+2024-07-15 15:46:12,041 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:12,041 test.py test_AD [line:169] INFO FL :15.4(0.9)
+2024-07-15 15:46:12,041 test.py test_AD [line:170] INFO TL :14.3(1.1)
+2024-07-15 15:46:12,041 test.py test_AD [line:171] INFO Mask :14.9
+2024-07-15 15:46:12,042 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:12,042 test.py test_AD [line:181] INFO Evaluation : val_dice: 1.4550, val_maxdice: 1.4550
+
+2024-07-15 15:46:12,634 train.py main [line:506] INFO 
+
+2024-07-15 15:46:12,762 train.py main [line:576] INFO epoch : 3, step : 0, loss_all: 1.6189,loss_ce: 0.9347, loss_dice: 0.8450, loss_focal: 0.2239, loss_iou: 1.0649, loss_supervised: 0.7671, loss_pc_lab: 0.8383, loss_pc_unlab: 1.8710, train_dice: 0.0446
+2024-07-15 15:46:12,881 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:12,881 test.py test_AD [line:130] INFO Class: 1: dice 1.4% | jaccard 0.7% | hd95 31.7 | asd 16.7
+2024-07-15 15:46:12,993 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:12,993 test.py test_AD [line:130] INFO Class: 2: dice 2.8% | jaccard 1.4% | hd95 24.9 | asd 12.6
+2024-07-15 15:46:13,123 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:13,123 test.py test_AD [line:130] INFO Class: 1: dice 2.1% | jaccard 1.1% | hd95 26.9 | asd 14.1
+2024-07-15 15:46:13,237 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:13,237 test.py test_AD [line:130] INFO Class: 2: dice 1.4% | jaccard 0.7% | hd95 27.7 | asd 14.5
+2024-07-15 15:46:13,237 test.py test_AD [line:151] INFO Dice Mean: 1.8960469676518796, Jaccard Mean: 0.9579842718107271, Hd95 Mean: 27.833925294218062, Assd Mean: 14.48122420824281
+2024-07-15 15:46:13,237 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:13,237 test.py test_AD [line:154] INFO FL :1.7(0.4)
+2024-07-15 15:46:13,237 test.py test_AD [line:155] INFO TL :2.1(0.7)
+2024-07-15 15:46:13,237 test.py test_AD [line:156] INFO Mean :1.9
+2024-07-15 15:46:13,237 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:13,237 test.py test_AD [line:159] INFO FL :0.9(0.2)
+2024-07-15 15:46:13,237 test.py test_AD [line:160] INFO TL :1.0(0.4)
+2024-07-15 15:46:13,238 test.py test_AD [line:161] INFO Mask :1.0
+2024-07-15 15:46:13,238 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:13,238 test.py test_AD [line:164] INFO FL :29.3(2.4)
+2024-07-15 15:46:13,238 test.py test_AD [line:165] INFO TL :26.3(1.4)
+2024-07-15 15:46:13,238 test.py test_AD [line:166] INFO Mask :27.8
+2024-07-15 15:46:13,238 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:13,238 test.py test_AD [line:169] INFO FL :15.4(1.3)
+2024-07-15 15:46:13,238 test.py test_AD [line:170] INFO TL :13.5(1.0)
+2024-07-15 15:46:13,238 test.py test_AD [line:171] INFO Mask :14.5
+2024-07-15 15:46:13,238 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:13,238 test.py test_AD [line:181] INFO Evaluation : val_dice: 1.8960, val_maxdice: 1.8960
+
+2024-07-15 15:46:13,766 train.py main [line:506] INFO 
+
+2024-07-15 15:46:13,887 train.py main [line:576] INFO epoch : 4, step : 0, loss_all: 1.5597,loss_ce: 0.9020, loss_dice: 0.8395, loss_focal: 0.2146, loss_iou: 1.0065, loss_supervised: 0.7407, loss_pc_lab: 0.8054, loss_pc_unlab: 1.8253, train_dice: 0.0400
+2024-07-15 15:46:14,007 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:14,007 test.py test_AD [line:130] INFO Class: 1: dice 1.7% | jaccard 0.8% | hd95 32.4 | asd 17.6
+2024-07-15 15:46:14,119 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:14,119 test.py test_AD [line:130] INFO Class: 2: dice 3.6% | jaccard 1.8% | hd95 24.0 | asd 12.5
+2024-07-15 15:46:14,240 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:14,240 test.py test_AD [line:130] INFO Class: 1: dice 2.7% | jaccard 1.3% | hd95 27.5 | asd 13.9
+2024-07-15 15:46:14,348 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:14,349 test.py test_AD [line:130] INFO Class: 2: dice 2.3% | jaccard 1.2% | hd95 27.5 | asd 14.1
+2024-07-15 15:46:14,349 test.py test_AD [line:151] INFO Dice Mean: 2.538022222344185, Jaccard Mean: 1.2865411713439792, Hd95 Mean: 27.873571037764346, Assd Mean: 14.525949921140786
+2024-07-15 15:46:14,349 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:14,349 test.py test_AD [line:154] INFO FL :2.2(0.5)
+2024-07-15 15:46:14,349 test.py test_AD [line:155] INFO TL :2.9(0.6)
+2024-07-15 15:46:14,349 test.py test_AD [line:156] INFO Mean :2.5
+2024-07-15 15:46:14,349 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:14,349 test.py test_AD [line:159] INFO FL :1.1(0.3)
+2024-07-15 15:46:14,349 test.py test_AD [line:160] INFO TL :1.5(0.3)
+2024-07-15 15:46:14,350 test.py test_AD [line:161] INFO Mask :1.3
+2024-07-15 15:46:14,350 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:14,350 test.py test_AD [line:164] INFO FL :30.0(2.5)
+2024-07-15 15:46:14,350 test.py test_AD [line:165] INFO TL :25.8(1.7)
+2024-07-15 15:46:14,350 test.py test_AD [line:166] INFO Mask :27.9
+2024-07-15 15:46:14,350 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:14,350 test.py test_AD [line:169] INFO FL :15.7(1.9)
+2024-07-15 15:46:14,350 test.py test_AD [line:170] INFO TL :13.3(0.8)
+2024-07-15 15:46:14,350 test.py test_AD [line:171] INFO Mask :14.5
+2024-07-15 15:46:14,350 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:14,350 test.py test_AD [line:181] INFO Evaluation : val_dice: 2.5380, val_maxdice: 2.5380
+
+2024-07-15 15:46:14,813 train.py main [line:506] INFO 
+
+2024-07-15 15:46:14,932 train.py main [line:576] INFO epoch : 5, step : 0, loss_all: 1.5079,loss_ce: 0.8713, loss_dice: 0.8350, loss_focal: 0.2008, loss_iou: 0.9662, loss_supervised: 0.7183, loss_pc_lab: 0.7757, loss_pc_unlab: 1.7997, train_dice: 0.0407
+2024-07-15 15:46:15,046 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:15,046 test.py test_AD [line:130] INFO Class: 1: dice 1.0% | jaccard 0.5% | hd95 33.0 | asd 18.8
+2024-07-15 15:46:15,153 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:15,153 test.py test_AD [line:130] INFO Class: 2: dice 5.5% | jaccard 2.8% | hd95 24.1 | asd 12.7
+2024-07-15 15:46:15,274 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:15,274 test.py test_AD [line:130] INFO Class: 1: dice 2.7% | jaccard 1.3% | hd95 27.1 | asd 13.0
+2024-07-15 15:46:15,386 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:15,386 test.py test_AD [line:130] INFO Class: 2: dice 3.3% | jaccard 1.7% | hd95 27.5 | asd 13.2
+2024-07-15 15:46:15,386 test.py test_AD [line:151] INFO Dice Mean: 3.1325942122058934, Jaccard Mean: 1.597912700403511, Hd95 Mean: 27.90867099034117, Assd Mean: 14.448435470399852
+2024-07-15 15:46:15,386 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:15,386 test.py test_AD [line:154] INFO FL :1.9(0.8)
+2024-07-15 15:46:15,386 test.py test_AD [line:155] INFO TL :4.4(1.1)
+2024-07-15 15:46:15,386 test.py test_AD [line:156] INFO Mean :3.1
+2024-07-15 15:46:15,387 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:15,387 test.py test_AD [line:159] INFO FL :0.9(0.4)
+2024-07-15 15:46:15,387 test.py test_AD [line:160] INFO TL :2.3(0.6)
+2024-07-15 15:46:15,387 test.py test_AD [line:161] INFO Mask :1.6
+2024-07-15 15:46:15,387 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:15,387 test.py test_AD [line:164] INFO FL :30.0(3.0)
+2024-07-15 15:46:15,387 test.py test_AD [line:165] INFO TL :25.8(1.7)
+2024-07-15 15:46:15,387 test.py test_AD [line:166] INFO Mask :27.9
+2024-07-15 15:46:15,387 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:15,387 test.py test_AD [line:169] INFO FL :15.9(2.9)
+2024-07-15 15:46:15,387 test.py test_AD [line:170] INFO TL :13.0(0.2)
+2024-07-15 15:46:15,387 test.py test_AD [line:171] INFO Mask :14.4
+2024-07-15 15:46:15,387 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:15,387 test.py test_AD [line:181] INFO Evaluation : val_dice: 3.1326, val_maxdice: 3.1326
+
+2024-07-15 15:46:15,866 train.py main [line:506] INFO 
+
+2024-07-15 15:46:15,987 train.py main [line:576] INFO epoch : 6, step : 0, loss_all: 1.4573,loss_ce: 0.8433, loss_dice: 0.8310, loss_focal: 0.1886, loss_iou: 0.9286, loss_supervised: 0.6979, loss_pc_lab: 0.7454, loss_pc_unlab: 1.7697, train_dice: 0.0444
+2024-07-15 15:46:16,102 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:16,102 test.py test_AD [line:130] INFO Class: 1: dice 0.1% | jaccard 0.0% | hd95 32.7 | asd 19.0
+2024-07-15 15:46:16,211 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:16,211 test.py test_AD [line:130] INFO Class: 2: dice 6.2% | jaccard 3.2% | hd95 24.0 | asd 12.6
+2024-07-15 15:46:16,325 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:16,325 test.py test_AD [line:130] INFO Class: 1: dice 3.0% | jaccard 1.5% | hd95 26.1 | asd 12.6
+2024-07-15 15:46:16,426 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:16,427 test.py test_AD [line:130] INFO Class: 2: dice 3.5% | jaccard 1.8% | hd95 27.3 | asd 12.4
+2024-07-15 15:46:16,427 test.py test_AD [line:151] INFO Dice Mean: 3.195984030383137, Jaccard Mean: 1.636300353893424, Hd95 Mean: 27.5271734394023, Assd Mean: 14.127313988464646
+2024-07-15 15:46:16,427 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:16,427 test.py test_AD [line:154] INFO FL :1.5(1.4)
+2024-07-15 15:46:16,427 test.py test_AD [line:155] INFO TL :4.9(1.3)
+2024-07-15 15:46:16,427 test.py test_AD [line:156] INFO Mean :3.2
+2024-07-15 15:46:16,427 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:16,427 test.py test_AD [line:159] INFO FL :0.8(0.7)
+2024-07-15 15:46:16,427 test.py test_AD [line:160] INFO TL :2.5(0.7)
+2024-07-15 15:46:16,427 test.py test_AD [line:161] INFO Mask :1.6
+2024-07-15 15:46:16,427 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:16,427 test.py test_AD [line:164] INFO FL :29.4(3.3)
+2024-07-15 15:46:16,427 test.py test_AD [line:165] INFO TL :25.7(1.6)
+2024-07-15 15:46:16,428 test.py test_AD [line:166] INFO Mask :27.5
+2024-07-15 15:46:16,428 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:16,428 test.py test_AD [line:169] INFO FL :15.8(3.2)
+2024-07-15 15:46:16,428 test.py test_AD [line:170] INFO TL :12.5(0.1)
+2024-07-15 15:46:16,428 test.py test_AD [line:171] INFO Mask :14.1
+2024-07-15 15:46:16,428 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:16,428 test.py test_AD [line:181] INFO Evaluation : val_dice: 3.1960, val_maxdice: 3.1960
+
+2024-07-15 15:46:16,893 train.py main [line:506] INFO 
+
+2024-07-15 15:46:17,010 train.py main [line:576] INFO epoch : 7, step : 0, loss_all: 1.4257,loss_ce: 0.8201, loss_dice: 0.8275, loss_focal: 0.1780, loss_iou: 0.8979, loss_supervised: 0.6809, loss_pc_lab: 0.7307, loss_pc_unlab: 1.7259, train_dice: 0.0474
+2024-07-15 15:46:17,127 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:17,127 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 33.0 | asd 19.5
+2024-07-15 15:46:17,236 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:17,237 test.py test_AD [line:130] INFO Class: 2: dice 5.6% | jaccard 2.9% | hd95 24.2 | asd 12.6
+2024-07-15 15:46:17,356 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:17,356 test.py test_AD [line:130] INFO Class: 1: dice 2.6% | jaccard 1.3% | hd95 26.2 | asd 12.6
+2024-07-15 15:46:17,463 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:17,463 test.py test_AD [line:130] INFO Class: 2: dice 3.0% | jaccard 1.5% | hd95 27.3 | asd 12.0
+2024-07-15 15:46:17,464 test.py test_AD [line:151] INFO Dice Mean: 2.7908277512190782, Jaccard Mean: 1.4254073244095815, Hd95 Mean: 27.657086302281986, Assd Mean: 14.20480966302161
+2024-07-15 15:46:17,464 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:17,464 test.py test_AD [line:154] INFO FL :1.3(1.3)
+2024-07-15 15:46:17,464 test.py test_AD [line:155] INFO TL :4.3(1.3)
+2024-07-15 15:46:17,464 test.py test_AD [line:156] INFO Mean :2.8
+2024-07-15 15:46:17,464 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:17,464 test.py test_AD [line:159] INFO FL :0.7(0.7)
+2024-07-15 15:46:17,464 test.py test_AD [line:160] INFO TL :2.2(0.7)
+2024-07-15 15:46:17,464 test.py test_AD [line:161] INFO Mask :1.4
+2024-07-15 15:46:17,464 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:17,464 test.py test_AD [line:164] INFO FL :29.6(3.4)
+2024-07-15 15:46:17,464 test.py test_AD [line:165] INFO TL :25.8(1.6)
+2024-07-15 15:46:17,464 test.py test_AD [line:166] INFO Mask :27.7
+2024-07-15 15:46:17,465 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:17,465 test.py test_AD [line:169] INFO FL :16.1(3.4)
+2024-07-15 15:46:17,465 test.py test_AD [line:170] INFO TL :12.3(0.3)
+2024-07-15 15:46:17,465 test.py test_AD [line:171] INFO Mask :14.2
+2024-07-15 15:46:17,465 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:17,465 test.py test_AD [line:181] INFO Evaluation : val_dice: 2.7908, val_maxdice: 2.7908
+
+2024-07-15 15:46:17,929 train.py main [line:506] INFO 
+
+2024-07-15 15:46:18,048 train.py main [line:576] INFO epoch : 8, step : 0, loss_all: 1.4103,loss_ce: 0.8014, loss_dice: 0.8251, loss_focal: 0.1695, loss_iou: 0.8728, loss_supervised: 0.6672, loss_pc_lab: 0.7287, loss_pc_unlab: 1.6910, train_dice: 0.0491
+2024-07-15 15:46:18,159 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:18,160 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 33.9 | asd 21.7
+2024-07-15 15:46:18,265 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:18,265 test.py test_AD [line:130] INFO Class: 2: dice 5.7% | jaccard 2.9% | hd95 24.4 | asd 13.6
+2024-07-15 15:46:18,382 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:18,382 test.py test_AD [line:130] INFO Class: 1: dice 2.0% | jaccard 1.0% | hd95 28.0 | asd 13.6
+2024-07-15 15:46:18,489 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:18,489 test.py test_AD [line:130] INFO Class: 2: dice 3.3% | jaccard 1.7% | hd95 28.2 | asd 12.6
+2024-07-15 15:46:18,490 test.py test_AD [line:151] INFO Dice Mean: 2.746510915085633, Jaccard Mean: 1.4033147327590143, Hd95 Mean: 28.626372260506255, Assd Mean: 15.378397379742609
+2024-07-15 15:46:18,490 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:18,490 test.py test_AD [line:154] INFO FL :1.0(1.0)
+2024-07-15 15:46:18,490 test.py test_AD [line:155] INFO TL :4.5(1.2)
+2024-07-15 15:46:18,490 test.py test_AD [line:156] INFO Mean :2.7
+2024-07-15 15:46:18,490 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:18,490 test.py test_AD [line:159] INFO FL :0.5(0.5)
+2024-07-15 15:46:18,490 test.py test_AD [line:160] INFO TL :2.3(0.6)
+2024-07-15 15:46:18,490 test.py test_AD [line:161] INFO Mask :1.4
+2024-07-15 15:46:18,490 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:18,490 test.py test_AD [line:164] INFO FL :31.0(3.0)
+2024-07-15 15:46:18,490 test.py test_AD [line:165] INFO TL :26.3(1.9)
+2024-07-15 15:46:18,490 test.py test_AD [line:166] INFO Mask :28.6
+2024-07-15 15:46:18,490 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:18,490 test.py test_AD [line:169] INFO FL :17.7(4.1)
+2024-07-15 15:46:18,490 test.py test_AD [line:170] INFO TL :13.1(0.5)
+2024-07-15 15:46:18,490 test.py test_AD [line:171] INFO Mask :15.4
+2024-07-15 15:46:18,490 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:18,490 test.py test_AD [line:181] INFO Evaluation : val_dice: 2.7465, val_maxdice: 2.7465
+
+2024-07-15 15:46:18,962 train.py main [line:506] INFO 
+
+2024-07-15 15:46:19,081 train.py main [line:576] INFO epoch : 9, step : 0, loss_all: 1.3880,loss_ce: 0.7868, loss_dice: 0.8223, loss_focal: 0.1623, loss_iou: 0.8523, loss_supervised: 0.6559, loss_pc_lab: 0.7174, loss_pc_unlab: 1.6699, train_dice: 0.0506
+2024-07-15 15:46:19,195 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:19,195 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 34.2 | asd 22.3
+2024-07-15 15:46:19,305 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:19,305 test.py test_AD [line:130] INFO Class: 2: dice 5.3% | jaccard 2.7% | hd95 24.6 | asd 13.9
+2024-07-15 15:46:19,422 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:19,422 test.py test_AD [line:130] INFO Class: 1: dice 1.4% | jaccard 0.7% | hd95 27.4 | asd 12.9
+2024-07-15 15:46:19,528 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:19,528 test.py test_AD [line:130] INFO Class: 2: dice 3.4% | jaccard 1.7% | hd95 28.0 | asd 11.9
+2024-07-15 15:46:19,528 test.py test_AD [line:151] INFO Dice Mean: 2.523549772448331, Jaccard Mean: 1.2881396987057605, Hd95 Mean: 28.53607582633792, Assd Mean: 15.252424929824567
+2024-07-15 15:46:19,528 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:19,528 test.py test_AD [line:154] INFO FL :0.7(0.7)
+2024-07-15 15:46:19,528 test.py test_AD [line:155] INFO TL :4.3(0.9)
+2024-07-15 15:46:19,529 test.py test_AD [line:156] INFO Mean :2.5
+2024-07-15 15:46:19,529 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:19,529 test.py test_AD [line:159] INFO FL :0.4(0.3)
+2024-07-15 15:46:19,529 test.py test_AD [line:160] INFO TL :2.2(0.5)
+2024-07-15 15:46:19,529 test.py test_AD [line:161] INFO Mask :1.3
+2024-07-15 15:46:19,529 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:19,529 test.py test_AD [line:164] INFO FL :30.8(3.4)
+2024-07-15 15:46:19,529 test.py test_AD [line:165] INFO TL :26.3(1.7)
+2024-07-15 15:46:19,529 test.py test_AD [line:166] INFO Mask :28.5
+2024-07-15 15:46:19,529 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:19,529 test.py test_AD [line:169] INFO FL :17.6(4.7)
+2024-07-15 15:46:19,529 test.py test_AD [line:170] INFO TL :12.9(1.0)
+2024-07-15 15:46:19,529 test.py test_AD [line:171] INFO Mask :15.3
+2024-07-15 15:46:19,529 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:19,529 test.py test_AD [line:181] INFO Evaluation : val_dice: 2.5235, val_maxdice: 2.5235
+
+2024-07-15 15:46:20,001 train.py main [line:506] INFO 
+
+2024-07-15 15:46:20,120 train.py main [line:576] INFO epoch : 10, step : 0, loss_all: 1.3650,loss_ce: 0.7725, loss_dice: 0.8201, loss_focal: 0.1558, loss_iou: 0.8350, loss_supervised: 0.6459, loss_pc_lab: 0.7042, loss_pc_unlab: 1.6479, train_dice: 0.0516
+2024-07-15 15:46:20,233 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:20,233 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 34.8 | asd 24.0
+2024-07-15 15:46:20,342 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:20,342 test.py test_AD [line:130] INFO Class: 2: dice 4.4% | jaccard 2.2% | hd95 24.6 | asd 15.8
+2024-07-15 15:46:20,462 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:20,462 test.py test_AD [line:130] INFO Class: 1: dice 1.3% | jaccard 0.7% | hd95 28.5 | asd 13.7
+2024-07-15 15:46:20,570 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:20,570 test.py test_AD [line:130] INFO Class: 2: dice 3.0% | jaccard 1.5% | hd95 28.7 | asd 13.0
+2024-07-15 15:46:20,570 test.py test_AD [line:151] INFO Dice Mean: 2.175551570214198, Jaccard Mean: 1.1068329656904248, Hd95 Mean: 29.145179065117446, Assd Mean: 16.62552119830907
+2024-07-15 15:46:20,570 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:20,571 test.py test_AD [line:154] INFO FL :0.7(0.6)
+2024-07-15 15:46:20,571 test.py test_AD [line:155] INFO TL :3.7(0.7)
+2024-07-15 15:46:20,571 test.py test_AD [line:156] INFO Mean :2.2
+2024-07-15 15:46:20,571 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:20,571 test.py test_AD [line:159] INFO FL :0.3(0.3)
+2024-07-15 15:46:20,571 test.py test_AD [line:160] INFO TL :1.9(0.4)
+2024-07-15 15:46:20,571 test.py test_AD [line:161] INFO Mask :1.1
+2024-07-15 15:46:20,571 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:20,571 test.py test_AD [line:164] INFO FL :31.6(3.2)
+2024-07-15 15:46:20,571 test.py test_AD [line:165] INFO TL :26.7(2.1)
+2024-07-15 15:46:20,571 test.py test_AD [line:166] INFO Mask :29.1
+2024-07-15 15:46:20,571 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:20,571 test.py test_AD [line:169] INFO FL :18.8(5.1)
+2024-07-15 15:46:20,571 test.py test_AD [line:170] INFO TL :14.4(1.4)
+2024-07-15 15:46:20,571 test.py test_AD [line:171] INFO Mask :16.6
+2024-07-15 15:46:20,571 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:20,571 test.py test_AD [line:181] INFO Evaluation : val_dice: 2.1756, val_maxdice: 2.1756
+
+2024-07-15 15:46:21,035 train.py main [line:506] INFO 
+
+2024-07-15 15:46:21,153 train.py main [line:576] INFO epoch : 11, step : 0, loss_all: 1.3419,loss_ce: 0.7577, loss_dice: 0.8179, loss_focal: 0.1494, loss_iou: 0.8209, loss_supervised: 0.6365, loss_pc_lab: 0.6902, loss_pc_unlab: 1.6241, train_dice: 0.0528
+2024-07-15 15:46:21,266 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:21,266 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 32.7 | asd 20.9
+2024-07-15 15:46:21,373 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:21,373 test.py test_AD [line:130] INFO Class: 2: dice 7.5% | jaccard 3.9% | hd95 22.7 | asd 12.6
+2024-07-15 15:46:21,492 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:21,492 test.py test_AD [line:130] INFO Class: 1: dice 3.0% | jaccard 1.5% | hd95 18.6 | asd 11.0
+2024-07-15 15:46:21,600 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:21,600 test.py test_AD [line:130] INFO Class: 2: dice 4.5% | jaccard 2.3% | hd95 17.2 | asd 9.1
+2024-07-15 15:46:21,601 test.py test_AD [line:151] INFO Dice Mean: 3.734873575936594, Jaccard Mean: 1.922143642689016, Hd95 Mean: 22.821820190654392, Assd Mean: 13.418969447638178
+2024-07-15 15:46:21,601 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:21,601 test.py test_AD [line:154] INFO FL :1.5(1.5)
+2024-07-15 15:46:21,601 test.py test_AD [line:155] INFO TL :6.0(1.5)
+2024-07-15 15:46:21,601 test.py test_AD [line:156] INFO Mean :3.7
+2024-07-15 15:46:21,601 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:21,601 test.py test_AD [line:159] INFO FL :0.8(0.8)
+2024-07-15 15:46:21,601 test.py test_AD [line:160] INFO TL :3.1(0.8)
+2024-07-15 15:46:21,601 test.py test_AD [line:161] INFO Mask :1.9
+2024-07-15 15:46:21,601 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:21,601 test.py test_AD [line:164] INFO FL :25.7(7.1)
+2024-07-15 15:46:21,601 test.py test_AD [line:165] INFO TL :20.0(2.8)
+2024-07-15 15:46:21,601 test.py test_AD [line:166] INFO Mask :22.8
+2024-07-15 15:46:21,601 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:21,601 test.py test_AD [line:169] INFO FL :16.0(4.9)
+2024-07-15 15:46:21,602 test.py test_AD [line:170] INFO TL :10.8(1.8)
+2024-07-15 15:46:21,602 test.py test_AD [line:171] INFO Mask :13.4
+2024-07-15 15:46:21,602 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:21,602 test.py test_AD [line:181] INFO Evaluation : val_dice: 3.7349, val_maxdice: 3.7349
+
+2024-07-15 15:46:22,071 train.py main [line:506] INFO 
+
+2024-07-15 15:46:22,193 train.py main [line:576] INFO epoch : 12, step : 0, loss_all: 1.3376,loss_ce: 0.7442, loss_dice: 0.8155, loss_focal: 0.1437, loss_iou: 0.8109, loss_supervised: 0.6285, loss_pc_lab: 0.6935, loss_pc_unlab: 1.6094, train_dice: 0.0539
+2024-07-15 15:46:22,308 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:22,309 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 35.0 | asd 23.3
+2024-07-15 15:46:22,418 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:22,418 test.py test_AD [line:130] INFO Class: 2: dice 6.9% | jaccard 3.6% | hd95 24.0 | asd 13.5
+2024-07-15 15:46:22,538 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:22,538 test.py test_AD [line:130] INFO Class: 1: dice 1.2% | jaccard 0.6% | hd95 29.0 | asd 13.1
+2024-07-15 15:46:22,646 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:22,646 test.py test_AD [line:130] INFO Class: 2: dice 3.4% | jaccard 1.7% | hd95 28.7 | asd 12.7
+2024-07-15 15:46:22,647 test.py test_AD [line:151] INFO Dice Mean: 2.8743252022035044, Jaccard Mean: 1.476124909830421, Hd95 Mean: 29.173578574689287, Assd Mean: 15.615477329787243
+2024-07-15 15:46:22,647 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:22,647 test.py test_AD [line:154] INFO FL :0.6(0.6)
+2024-07-15 15:46:22,647 test.py test_AD [line:155] INFO TL :5.1(1.7)
+2024-07-15 15:46:22,647 test.py test_AD [line:156] INFO Mean :2.9
+2024-07-15 15:46:22,647 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:22,647 test.py test_AD [line:159] INFO FL :0.3(0.3)
+2024-07-15 15:46:22,647 test.py test_AD [line:160] INFO TL :2.6(0.9)
+2024-07-15 15:46:22,647 test.py test_AD [line:161] INFO Mask :1.5
+2024-07-15 15:46:22,647 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:22,647 test.py test_AD [line:164] INFO FL :32.0(3.0)
+2024-07-15 15:46:22,647 test.py test_AD [line:165] INFO TL :26.3(2.3)
+2024-07-15 15:46:22,647 test.py test_AD [line:166] INFO Mask :29.2
+2024-07-15 15:46:22,647 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:22,647 test.py test_AD [line:169] INFO FL :18.2(5.1)
+2024-07-15 15:46:22,647 test.py test_AD [line:170] INFO TL :13.1(0.4)
+2024-07-15 15:46:22,648 test.py test_AD [line:171] INFO Mask :15.6
+2024-07-15 15:46:22,648 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:22,648 test.py test_AD [line:181] INFO Evaluation : val_dice: 2.8743, val_maxdice: 2.8743
+
+2024-07-15 15:46:23,112 train.py main [line:506] INFO 
+
+2024-07-15 15:46:23,230 train.py main [line:576] INFO epoch : 13, step : 0, loss_all: 1.3647,loss_ce: 0.7338, loss_dice: 0.8134, loss_focal: 0.1388, loss_iou: 0.7992, loss_supervised: 0.6213, loss_pc_lab: 0.7276, loss_pc_unlab: 1.5916, train_dice: 0.0556
+2024-07-15 15:46:23,346 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:23,346 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 33.5 | asd 20.9
+2024-07-15 15:46:23,450 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:23,451 test.py test_AD [line:130] INFO Class: 2: dice 8.0% | jaccard 4.2% | hd95 22.8 | asd 12.0
+2024-07-15 15:46:23,566 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:23,567 test.py test_AD [line:130] INFO Class: 1: dice 1.2% | jaccard 0.6% | hd95 27.0 | asd 12.5
+2024-07-15 15:46:23,671 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:23,671 test.py test_AD [line:130] INFO Class: 2: dice 4.5% | jaccard 2.3% | hd95 26.4 | asd 10.8
+2024-07-15 15:46:23,671 test.py test_AD [line:151] INFO Dice Mean: 3.4224980075038536, Jaccard Mean: 1.7669818481108261, Hd95 Mean: 27.42044978158784, Assd Mean: 14.064790089374922
+2024-07-15 15:46:23,671 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:23,671 test.py test_AD [line:154] INFO FL :0.6(0.6)
+2024-07-15 15:46:23,671 test.py test_AD [line:155] INFO TL :6.3(1.8)
+2024-07-15 15:46:23,671 test.py test_AD [line:156] INFO Mean :3.4
+2024-07-15 15:46:23,671 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:23,671 test.py test_AD [line:159] INFO FL :0.3(0.3)
+2024-07-15 15:46:23,671 test.py test_AD [line:160] INFO TL :3.2(0.9)
+2024-07-15 15:46:23,671 test.py test_AD [line:161] INFO Mask :1.8
+2024-07-15 15:46:23,671 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:23,672 test.py test_AD [line:164] INFO FL :30.2(3.2)
+2024-07-15 15:46:23,672 test.py test_AD [line:165] INFO TL :24.6(1.8)
+2024-07-15 15:46:23,672 test.py test_AD [line:166] INFO Mask :27.4
+2024-07-15 15:46:23,672 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:23,672 test.py test_AD [line:169] INFO FL :16.7(4.2)
+2024-07-15 15:46:23,672 test.py test_AD [line:170] INFO TL :11.4(0.6)
+2024-07-15 15:46:23,672 test.py test_AD [line:171] INFO Mask :14.1
+2024-07-15 15:46:23,672 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:23,672 test.py test_AD [line:181] INFO Evaluation : val_dice: 3.4225, val_maxdice: 3.4225
+
+2024-07-15 15:46:24,170 train.py main [line:506] INFO 
+
+2024-07-15 15:46:24,288 train.py main [line:576] INFO epoch : 14, step : 0, loss_all: 1.3498,loss_ce: 0.7237, loss_dice: 0.8114, loss_focal: 0.1336, loss_iou: 0.7889, loss_supervised: 0.6144, loss_pc_lab: 0.7191, loss_pc_unlab: 1.5838, train_dice: 0.0558
+2024-07-15 15:46:24,400 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:24,400 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 32.8 | asd 19.3
+2024-07-15 15:46:24,506 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:24,506 test.py test_AD [line:130] INFO Class: 2: dice 8.6% | jaccard 4.5% | hd95 21.8 | asd 11.0
+2024-07-15 15:46:24,620 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:24,621 test.py test_AD [line:130] INFO Class: 1: dice 0.3% | jaccard 0.2% | hd95 20.6 | asd 12.6
+2024-07-15 15:46:24,723 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:24,723 test.py test_AD [line:130] INFO Class: 2: dice 5.0% | jaccard 2.6% | hd95 17.8 | asd 9.6
+2024-07-15 15:46:24,724 test.py test_AD [line:151] INFO Dice Mean: 3.477611195772822, Jaccard Mean: 1.802879747306733, Hd95 Mean: 23.271719742247527, Assd Mean: 13.089749255422255
+2024-07-15 15:46:24,724 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:24,724 test.py test_AD [line:154] INFO FL :0.2(0.2)
+2024-07-15 15:46:24,724 test.py test_AD [line:155] INFO TL :6.8(1.8)
+2024-07-15 15:46:24,724 test.py test_AD [line:156] INFO Mean :3.5
+2024-07-15 15:46:24,724 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:24,724 test.py test_AD [line:159] INFO FL :0.1(0.1)
+2024-07-15 15:46:24,724 test.py test_AD [line:160] INFO TL :3.5(0.9)
+2024-07-15 15:46:24,724 test.py test_AD [line:161] INFO Mask :1.8
+2024-07-15 15:46:24,724 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:24,724 test.py test_AD [line:164] INFO FL :26.7(6.1)
+2024-07-15 15:46:24,724 test.py test_AD [line:165] INFO TL :19.8(2.0)
+2024-07-15 15:46:24,724 test.py test_AD [line:166] INFO Mask :23.3
+2024-07-15 15:46:24,724 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:24,724 test.py test_AD [line:169] INFO FL :15.9(3.3)
+2024-07-15 15:46:24,724 test.py test_AD [line:170] INFO TL :10.3(0.7)
+2024-07-15 15:46:24,724 test.py test_AD [line:171] INFO Mask :13.1
+2024-07-15 15:46:24,724 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:24,724 test.py test_AD [line:181] INFO Evaluation : val_dice: 3.4776, val_maxdice: 3.4776
+
+2024-07-15 15:46:25,197 train.py main [line:506] INFO 
+
+2024-07-15 15:46:25,315 train.py main [line:576] INFO epoch : 15, step : 0, loss_all: 1.3227,loss_ce: 0.7148, loss_dice: 0.8095, loss_focal: 0.1299, loss_iou: 0.7805, loss_supervised: 0.6087, loss_pc_lab: 0.6973, loss_pc_unlab: 1.5729, train_dice: 0.0579
+2024-07-15 15:46:25,447 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:25,447 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 30.6 | asd 19.0
+2024-07-15 15:46:25,550 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:25,550 test.py test_AD [line:130] INFO Class: 2: dice 7.9% | jaccard 4.1% | hd95 20.7 | asd 10.2
+2024-07-15 15:46:25,666 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:25,666 test.py test_AD [line:130] INFO Class: 1: dice 1.0% | jaccard 0.5% | hd95 24.0 | asd 12.0
+2024-07-15 15:46:25,770 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:25,770 test.py test_AD [line:130] INFO Class: 2: dice 4.4% | jaccard 2.3% | hd95 23.0 | asd 9.2
+2024-07-15 15:46:25,771 test.py test_AD [line:151] INFO Dice Mean: 3.336211105828975, Jaccard Mean: 1.72236149348196, Hd95 Mean: 24.59843206650708, Assd Mean: 12.622517329412727
+2024-07-15 15:46:25,771 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:25,771 test.py test_AD [line:154] INFO FL :0.5(0.5)
+2024-07-15 15:46:25,771 test.py test_AD [line:155] INFO TL :6.2(1.7)
+2024-07-15 15:46:25,771 test.py test_AD [line:156] INFO Mean :3.3
+2024-07-15 15:46:25,771 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:25,771 test.py test_AD [line:159] INFO FL :0.2(0.2)
+2024-07-15 15:46:25,771 test.py test_AD [line:160] INFO TL :3.2(0.9)
+2024-07-15 15:46:25,771 test.py test_AD [line:161] INFO Mask :1.7
+2024-07-15 15:46:25,771 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:25,771 test.py test_AD [line:164] INFO FL :27.3(3.3)
+2024-07-15 15:46:25,771 test.py test_AD [line:165] INFO TL :21.9(1.2)
+2024-07-15 15:46:25,771 test.py test_AD [line:166] INFO Mask :24.6
+2024-07-15 15:46:25,771 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:25,771 test.py test_AD [line:169] INFO FL :15.5(3.5)
+2024-07-15 15:46:25,771 test.py test_AD [line:170] INFO TL :9.7(0.5)
+2024-07-15 15:46:25,771 test.py test_AD [line:171] INFO Mask :12.6
+2024-07-15 15:46:25,771 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:25,771 test.py test_AD [line:181] INFO Evaluation : val_dice: 3.3362, val_maxdice: 3.3362
+
+2024-07-15 15:46:26,245 train.py main [line:506] INFO 
+
+2024-07-15 15:46:26,363 train.py main [line:576] INFO epoch : 16, step : 0, loss_all: 1.3070,loss_ce: 0.7090, loss_dice: 0.8079, loss_focal: 0.1266, loss_iou: 0.7769, loss_supervised: 0.6051, loss_pc_lab: 0.6847, loss_pc_unlab: 1.5630, train_dice: 0.0595
+2024-07-15 15:46:26,476 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:26,476 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 33.1 | asd 21.3
+2024-07-15 15:46:26,583 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:26,583 test.py test_AD [line:130] INFO Class: 2: dice 1.3% | jaccard 0.7% | hd95 22.7 | asd 15.6
+2024-07-15 15:46:26,695 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:26,695 test.py test_AD [line:130] INFO Class: 1: dice 0.5% | jaccard 0.2% | hd95 27.2 | asd 14.4
+2024-07-15 15:46:26,796 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:26,796 test.py test_AD [line:130] INFO Class: 2: dice 3.2% | jaccard 1.6% | hd95 27.2 | asd 13.7
+2024-07-15 15:46:26,796 test.py test_AD [line:151] INFO Dice Mean: 1.2476532526171646, Jaccard Mean: 0.6315699137830108, Hd95 Mean: 27.543787967167916, Assd Mean: 16.257740816155867
+2024-07-15 15:46:26,796 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:26,796 test.py test_AD [line:154] INFO FL :0.2(0.2)
+2024-07-15 15:46:26,797 test.py test_AD [line:155] INFO TL :2.3(1.0)
+2024-07-15 15:46:26,797 test.py test_AD [line:156] INFO Mean :1.2
+2024-07-15 15:46:26,797 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:26,797 test.py test_AD [line:159] INFO FL :0.1(0.1)
+2024-07-15 15:46:26,797 test.py test_AD [line:160] INFO TL :1.1(0.5)
+2024-07-15 15:46:26,797 test.py test_AD [line:161] INFO Mask :0.6
+2024-07-15 15:46:26,797 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:26,797 test.py test_AD [line:164] INFO FL :30.1(2.9)
+2024-07-15 15:46:26,797 test.py test_AD [line:165] INFO TL :25.0(2.3)
+2024-07-15 15:46:26,797 test.py test_AD [line:166] INFO Mask :27.5
+2024-07-15 15:46:26,797 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:26,797 test.py test_AD [line:169] INFO FL :17.9(3.4)
+2024-07-15 15:46:26,797 test.py test_AD [line:170] INFO TL :14.7(0.9)
+2024-07-15 15:46:26,797 test.py test_AD [line:171] INFO Mask :16.3
+2024-07-15 15:46:26,797 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:26,797 test.py test_AD [line:181] INFO Evaluation : val_dice: 1.2477, val_maxdice: 1.2477
+
+2024-07-15 15:46:27,265 train.py main [line:506] INFO 
+
+2024-07-15 15:46:27,383 train.py main [line:576] INFO epoch : 17, step : 0, loss_all: 1.2914,loss_ce: 0.6997, loss_dice: 0.8068, loss_focal: 0.1230, loss_iou: 0.7659, loss_supervised: 0.5988, loss_pc_lab: 0.6750, loss_pc_unlab: 1.5567, train_dice: 0.0578
+2024-07-15 15:46:27,500 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:27,500 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 31.6 | asd 19.4
+2024-07-15 15:46:27,604 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:27,604 test.py test_AD [line:130] INFO Class: 2: dice 0.0% | jaccard 0.0% | hd95 21.0 | asd 15.6
+2024-07-15 15:46:27,722 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:27,722 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 25.5 | asd 15.2
+2024-07-15 15:46:27,826 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:27,826 test.py test_AD [line:130] INFO Class: 2: dice 0.2% | jaccard 0.1% | hd95 25.1 | asd 13.8
+2024-07-15 15:46:27,827 test.py test_AD [line:151] INFO Dice Mean: 0.040809663728370874, Jaccard Mean: 0.020421499754942004, Hd95 Mean: 25.803012759524727, Assd Mean: 15.986879578043894
+2024-07-15 15:46:27,827 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:27,827 test.py test_AD [line:154] INFO FL :0.0(0.0)
+2024-07-15 15:46:27,827 test.py test_AD [line:155] INFO TL :0.1(0.1)
+2024-07-15 15:46:27,827 test.py test_AD [line:156] INFO Mean :0.0
+2024-07-15 15:46:27,827 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:27,827 test.py test_AD [line:159] INFO FL :0.0(0.0)
+2024-07-15 15:46:27,827 test.py test_AD [line:160] INFO TL :0.0(0.0)
+2024-07-15 15:46:27,827 test.py test_AD [line:161] INFO Mask :0.0
+2024-07-15 15:46:27,827 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:27,827 test.py test_AD [line:164] INFO FL :28.6(3.1)
+2024-07-15 15:46:27,827 test.py test_AD [line:165] INFO TL :23.1(2.0)
+2024-07-15 15:46:27,827 test.py test_AD [line:166] INFO Mask :25.8
+2024-07-15 15:46:27,827 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:27,827 test.py test_AD [line:169] INFO FL :17.3(2.1)
+2024-07-15 15:46:27,827 test.py test_AD [line:170] INFO TL :14.7(0.9)
+2024-07-15 15:46:27,827 test.py test_AD [line:171] INFO Mask :16.0
+2024-07-15 15:46:27,827 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:27,827 test.py test_AD [line:181] INFO Evaluation : val_dice: 0.0408, val_maxdice: 0.0408
+
+2024-07-15 15:46:28,302 train.py main [line:506] INFO 
+
+2024-07-15 15:46:28,421 train.py main [line:576] INFO epoch : 18, step : 0, loss_all: 1.2778,loss_ce: 0.6914, loss_dice: 0.8053, loss_focal: 0.1206, loss_iou: 0.7585, loss_supervised: 0.5939, loss_pc_lab: 0.6658, loss_pc_unlab: 1.5512, train_dice: 0.0591
+2024-07-15 15:46:28,533 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:28,533 test.py test_AD [line:130] INFO Class: 1: dice 0.8% | jaccard 0.4% | hd95 30.0 | asd 16.1
+2024-07-15 15:46:28,638 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:28,638 test.py test_AD [line:130] INFO Class: 2: dice 0.1% | jaccard 0.1% | hd95 19.3 | asd 14.4
+2024-07-15 15:46:28,758 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:28,758 test.py test_AD [line:130] INFO Class: 1: dice 2.1% | jaccard 1.1% | hd95 21.2 | asd 12.6
+2024-07-15 15:46:28,867 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:28,867 test.py test_AD [line:130] INFO Class: 2: dice 0.4% | jaccard 0.2% | hd95 18.4 | asd 10.9
+2024-07-15 15:46:28,868 test.py test_AD [line:151] INFO Dice Mean: 0.8806032671683612, Jaccard Mean: 0.4437281473624814, Hd95 Mean: 22.248859103925238, Assd Mean: 13.510728714857231
+2024-07-15 15:46:28,868 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:28,868 test.py test_AD [line:154] INFO FL :1.5(0.7)
+2024-07-15 15:46:28,868 test.py test_AD [line:155] INFO TL :0.3(0.1)
+2024-07-15 15:46:28,868 test.py test_AD [line:156] INFO Mean :0.9
+2024-07-15 15:46:28,868 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:28,868 test.py test_AD [line:159] INFO FL :0.7(0.3)
+2024-07-15 15:46:28,868 test.py test_AD [line:160] INFO TL :0.1(0.1)
+2024-07-15 15:46:28,868 test.py test_AD [line:161] INFO Mask :0.4
+2024-07-15 15:46:28,868 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:28,868 test.py test_AD [line:164] INFO FL :25.6(4.4)
+2024-07-15 15:46:28,868 test.py test_AD [line:165] INFO TL :18.9(0.4)
+2024-07-15 15:46:28,868 test.py test_AD [line:166] INFO Mask :22.2
+2024-07-15 15:46:28,868 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:28,868 test.py test_AD [line:169] INFO FL :14.4(1.8)
+2024-07-15 15:46:28,868 test.py test_AD [line:170] INFO TL :12.7(1.7)
+2024-07-15 15:46:28,868 test.py test_AD [line:171] INFO Mask :13.5
+2024-07-15 15:46:28,868 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:28,868 test.py test_AD [line:181] INFO Evaluation : val_dice: 0.8806, val_maxdice: 0.8806
+
+2024-07-15 15:46:29,329 train.py main [line:506] INFO 
+
+2024-07-15 15:46:29,448 train.py main [line:576] INFO epoch : 19, step : 0, loss_all: 1.2653,loss_ce: 0.6838, loss_dice: 0.8037, loss_focal: 0.1182, loss_iou: 0.7519, loss_supervised: 0.5894, loss_pc_lab: 0.6572, loss_pc_unlab: 1.5449, train_dice: 0.0595
+2024-07-15 15:46:29,586 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:29,586 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 29.6 | asd 18.4
+2024-07-15 15:46:29,692 test.py test_AD [line:129] INFO 
+[0/2] 0%:	['preprocess/TBAD/ImageTBAD/TBAD-22.h5']
+2024-07-15 15:46:29,692 test.py test_AD [line:130] INFO Class: 2: dice 0.0% | jaccard 0.0% | hd95 19.1 | asd 14.2
+2024-07-15 15:46:29,808 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:29,808 test.py test_AD [line:130] INFO Class: 1: dice 0.0% | jaccard 0.0% | hd95 22.1 | asd 14.6
+2024-07-15 15:46:29,911 test.py test_AD [line:129] INFO 
+[1/2] 50%:	['preprocess/TBAD/ImageTBAD/TBAD-129.h5']
+2024-07-15 15:46:29,911 test.py test_AD [line:130] INFO Class: 2: dice 0.0% | jaccard 0.0% | hd95 19.2 | asd 11.8
+2024-07-15 15:46:29,912 test.py test_AD [line:151] INFO Dice Mean: 0.0, Jaccard Mean: 0.0, Hd95 Mean: 22.497795318131573, Assd Mean: 14.764412664667077
+2024-07-15 15:46:29,912 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:29,912 test.py test_AD [line:154] INFO FL :0.0(0.0)
+2024-07-15 15:46:29,912 test.py test_AD [line:155] INFO TL :0.0(0.0)
+2024-07-15 15:46:29,912 test.py test_AD [line:156] INFO Mean :0.0
+2024-07-15 15:46:29,912 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:29,912 test.py test_AD [line:159] INFO FL :0.0(0.0)
+2024-07-15 15:46:29,912 test.py test_AD [line:160] INFO TL :0.0(0.0)
+2024-07-15 15:46:29,912 test.py test_AD [line:161] INFO Mask :0.0
+2024-07-15 15:46:29,912 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:29,912 test.py test_AD [line:164] INFO FL :25.8(3.7)
+2024-07-15 15:46:29,912 test.py test_AD [line:165] INFO TL :19.2(0.1)
+2024-07-15 15:46:29,912 test.py test_AD [line:166] INFO Mask :22.5
+2024-07-15 15:46:29,912 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:29,912 test.py test_AD [line:169] INFO FL :16.5(1.9)
+2024-07-15 15:46:29,912 test.py test_AD [line:170] INFO TL :13.0(1.2)
+2024-07-15 15:46:29,912 test.py test_AD [line:171] INFO Mask :14.8
+2024-07-15 15:46:29,912 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:29,912 test.py test_AD [line:181] INFO Evaluation : val_dice: 0.0000, val_maxdice: 0.0000
+
+2024-07-15 15:46:30,125 train.py main [line:506] INFO 
+
+2024-07-15 15:46:30,244 train.py main [line:576] INFO epoch : 20, step : 0, loss_all: 1.2530,loss_ce: 0.6764, loss_dice: 0.8021, loss_focal: 0.1148, loss_iou: 0.7439, loss_supervised: 0.5843, loss_pc_lab: 0.6495, loss_pc_unlab: 1.5377, train_dice: 0.0592
+2024-07-15 15:46:30,701 test.py test_AD [line:151] INFO Dice Mean: 0.0, Jaccard Mean: 0.0, Hd95 Mean: 21.477402573968554, Assd Mean: 14.18852123356574
+2024-07-15 15:46:30,701 test.py test_AD [line:153] INFO Dice:
+2024-07-15 15:46:30,701 test.py test_AD [line:154] INFO FL :0.0(0.0)
+2024-07-15 15:46:30,701 test.py test_AD [line:155] INFO TL :0.0(0.0)
+2024-07-15 15:46:30,701 test.py test_AD [line:156] INFO Mean :0.0
+2024-07-15 15:46:30,701 test.py test_AD [line:158] INFO 
+Jaccard:
+2024-07-15 15:46:30,701 test.py test_AD [line:159] INFO FL :0.0(0.0)
+2024-07-15 15:46:30,701 test.py test_AD [line:160] INFO TL :0.0(0.0)
+2024-07-15 15:46:30,701 test.py test_AD [line:161] INFO Mask :0.0
+2024-07-15 15:46:30,701 test.py test_AD [line:163] INFO 
+HD95:
+2024-07-15 15:46:30,702 test.py test_AD [line:164] INFO FL :25.1(4.0)
+2024-07-15 15:46:30,702 test.py test_AD [line:165] INFO TL :17.9(0.5)
+2024-07-15 15:46:30,702 test.py test_AD [line:166] INFO Mask :21.5
+2024-07-15 15:46:30,702 test.py test_AD [line:168] INFO 
+ASSD:
+2024-07-15 15:46:30,702 test.py test_AD [line:169] INFO FL :16.1(1.8)
+2024-07-15 15:46:30,702 test.py test_AD [line:170] INFO TL :12.3(1.1)
+2024-07-15 15:46:30,702 test.py test_AD [line:171] INFO Mask :14.2
+2024-07-15 15:46:30,702 test.py test_AD [line:173] INFO Inference time: 0.2
+2024-07-15 15:46:30,702 test.py test_AD [line:181] INFO Evaluation : val_dice: 0.0000, val_maxdice: 0.0000
+
