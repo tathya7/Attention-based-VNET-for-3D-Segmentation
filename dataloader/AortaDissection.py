@@ -33,6 +33,11 @@ class AortaDissection(Dataset):
             data_path = os.path.join(list_dir, 'test.txt')
             self.transform = False
 
+        print(f"Data path: {data_path}")  # Debugging line
+
+        if not os.path.exists(data_path):
+            raise FileNotFoundError(f"File {data_path} does not exist")
+
         with open(data_path, 'r') as f:
             self.image_list = f.readlines()
 
@@ -86,8 +91,8 @@ class AortaDissection(Dataset):
 
 
 if __name__ == '__main__':
-    data_dir = 'preprocess/TBAD/ImageTBAD'
-    list_dir = 'datalist/AD/AD_0'
+    data_dir = '/Users/aryanmishra/Desktop/VNET_AMC-main/preprocess/TBAD/ImageTBAD'
+    list_dir = '/Users/aryanmishra/Desktop/VNET_AMC-main/datalist/AD/AD_0'
 
     labset = AortaDissection(data_dir, list_dir, split='lab')
     unlabset = AortaDissection(data_dir, list_dir, split='unlab')
