@@ -48,7 +48,7 @@ The attention mechanism is integrated into the V-Net architecture to enhance the
 ## Results
 
 <!-- Add your results here -->
-[Result](https://github.com/Iaryan-21/VNET_AMC/blob/main/TBAD-108.png)
+![Result](https://github.com/Iaryan-21/VNET_AMC/blob/main/TBAD-108.png)
 
 ## References
 
