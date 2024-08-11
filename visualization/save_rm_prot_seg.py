@@ -13,8 +13,7 @@ from torch.utils.data import DataLoader
 from torch.nn.modules.loss import CrossEntropyLoss
 from tqdm import tqdm
 
-# from dataloader.LeftAtrium import LAHeart
-# from dataloader.pancreas import Pancreas
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from dataloader.AortaDissection import AortaDissection
 
