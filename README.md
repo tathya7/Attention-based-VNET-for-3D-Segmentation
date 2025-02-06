@@ -1,4 +1,4 @@
-# VNET with Attention Mechanism for Segmentation of 3D MRI and CT Aorta Dissection Images
+# VNET with Attention Mechanism for Segmentation of 3D MRI & CT Aorta Dissection Images
 
 The segmentation of 3D medical images, especially for complex structures like the aorta, presents significant challenges due to the varying shapes, sizes, and textures of anatomical features. Accurate segmentation is crucial for diagnosis, treatment planning, and disease monitoring. This project focuses on leveraging a VNET architecture with an attention mechanism to enhance the segmentation accuracy of 3D MRI and CT images, specifically targeting Type-B Aortic Dissection (TBAD).
 
